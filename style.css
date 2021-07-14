@@ -1,0 +1,427 @@
+    /* import google font */
+    
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+    /* common style */
+    
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        font-family: 'Poppins', sans-serif;
+        background-color: #f5f5f5;
+    }
+    
+    .container {
+        display: flex;
+        justify-content: center;
+        background-color: #2D25A0;
+    }
+    /* star web-header style */
+    
+    .header-nav {
+        width: 1160px;
+        height: 44px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 42px;
+    }
+    
+    .menu ul li {
+        display: inline-block;
+    }
+    
+    .menu ul li a {
+        display: block;
+        text-decoration: none;
+        text-transform: capitalize;
+        color: #fff;
+        font-size: 16px;
+        margin: 0 36px;
+    }
+    
+    .login-button a {
+        display: inline-block;
+        text-decoration: none;
+        width: 123px;
+        height: 44px;
+        background-color: #E02C6D;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        cursor: pointer;
+    }
+    
+    .fa-sign-in-alt {
+        margin-right: 8px;
+    }
+    /* star web-banner style */
+    
+    .web-banner {
+        width: 1160px;
+        display: flex;
+        justify-content: space-between;
+        padding: 67px 0;
+    }
+    
+    .banner-text {
+        width: 485px;
+    }
+    
+    .banner-text h2 {
+        font-size: 64px;
+        font-weight: 700;
+        color: #fff;
+        line-height: 80px;
+    }
+    
+    .banner-text button {
+        width: 168px;
+        height: 44px;
+        padding: 10px 24px;
+        font-size: 16px;
+        background-color: #E02C6D;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 7px;
+        -webkit-border-radius: 7px;
+        -moz-border-radius: 7px;
+        -ms-border-radius: 7px;
+        -o-border-radius: 7px;
+        border: 1px solid #eee;
+        margin-top: 30px;
+        cursor: pointer;
+    }
+    
+    .banner-text button i {
+        margin-left: 8px;
+        transition: margin-left 1s;
+        -webkit-transition: margin-left transform 1s;
+        -moz-transition: margin-left 1s;
+        -ms-transition: margin-left 1s;
+        -o-transition: margin-left 1s;
+    }
+    
+    .banner-text button:hover i {
+        transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        margin-left: 30px;
+    }
+    
+    .banner-image img {
+        width: 556px;
+        height: 438px;
+    }
+    /* star players-section style */
+    
+    #players-section {
+        display: flex;
+        justify-content: center;
+        margin-top: 70px;
+    }
+    
+    .players-container {
+        width: 1050px;
+    }
+    
+    .players {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-column-gap: 30px;
+        grid-row-gap: 27px;
+    }
+    
+    .player {
+        height: 426px;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        padding-bottom: 30px;
+    }
+    
+    .player-container {
+        width: 90%;
+        height: 94%;
+        overflow: hidden;
+    }
+    
+    .player-images img {
+        width: 100%;
+        height: 256px;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+    }
+    
+    .player-name h3 {
+        font-weight: 700;
+        color: #18191F;
+        font-size: 24px;
+        line-height: 40px;
+    }
+    
+    .player-info {
+        color: #6C6C6C;
+        font-size: 16px;
+        line-height: 20px;
+    }
+    /* style match section */
+    
+    #match-section {
+        margin-top: 70px;
+        text-align: center;
+    }
+    
+    #match-section h2 {
+        font-size: 50px;
+        color: #333;
+    }
+    
+    #match-section p {
+        color: gray;
+    }
+    
+    .all-matches {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .mathc-container {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 70px;
+    }
+    
+    .match {
+        width: 20%;
+        height: 250px;
+        border: 1px solid green;
+        background-color: #fff;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+    }
+    
+    .team {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .team P {
+        font-size: 24px;
+    }
+    
+    .team-name,
+    .details p {
+        font-size: 14px;
+        margin: 0 7px;
+    }
+    
+    .read-more p {
+        margin-top: 10px;
+    }
+    
+    .animation {
+        width: 80px;
+        background-color: #333;
+        height: 10px;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+    
+    .animation-loading {
+        width: 0%;
+        height: 100%;
+        background-color: #bc9109;
+        transition: width 2s;
+        -webkit-transition: width 2s;
+        -moz-transition: width 2s;
+        -ms-transition: width 2s;
+        -o-transition: width 2s;
+        cursor: pointer;
+    }
+    
+    .animation:hover .animation-loading {
+        width: 100%;
+    }
+    /* star subscribe section style */
+    
+    #subscribe-section {
+        text-align: center;
+        margin: 100px 0;
+    }
+    
+    .subscribe {
+        width: 35%;
+        margin: 0 auto;
+        margin-top: 20px;
+        position: relative;
+    }
+    
+    .subscribe input:focus {
+        outline: none;
+    }
+    
+    .email-input-fild {
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    .email-input-fild input {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        padding: 10px 0;
+        padding-left: 15px;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        border: 1px solid #000;
+    }
+    
+    .submit-button {
+        position: absolute;
+        top: 0;
+        left: 82.9%;
+    }
+    
+    .submit-button input {
+        padding: 11px 15px;
+        text-transform: capitalize;
+        background-image: linear-gradient(to right, tomato, #3F00FF);
+        color: #fff;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border: none;
+        font-size: 14px;
+        cursor: pointer;
+    }
+    /* star style-footer style */
+    
+    #style-footer {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        background-color: #fff;
+        padding: 40px;
+    }
+    
+    .club-logo img {
+        width: 300px;
+    }
+    
+    .socila-icon h3 {
+        font-size: 30px;
+        margin: 10px 0;
+    }
+    
+    .socila-icon a {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        border: 2px solid #eee;
+        position: relative;
+        background-color: #000;
+        transition: background-color 1s;
+        -webkit-transition: background-color 1s;
+        -moz-transition: background-color 1s;
+        -ms-transition: background-color 1s;
+        -o-transition: background-color 1s;
+    }
+    
+    .socila-icon a:hover {
+        background-color: tomato;
+    }
+    
+    .socila-icon a i {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        font-size: 20px;
+        color: #fff;
+    }
+    
+    .footer-bottom p {
+        text-transform: capitalize;
+        margin-top: 30px;
+        color: gray;
+    }
+    /* responsive for mobile devise */
+    
+    @media (max-width: 480px) {
+        .header-nav {
+            display: none;
+        }
+        .web-banner {
+            flex-direction: column;
+        }
+        .banner-text {
+            width: 80%;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        .banner-text h2 {
+            font-size: 70px;
+        }
+        .banner-image img {
+            width: 100%;
+            margin-top: 50px;
+        }
+        .players {
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(12, 1fr);
+        }
+        .mathc-container {
+            flex-direction: column;
+        }
+        .match {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .team-flage:nth-child(n) {
+            margin-left: 10px;
+        }
+        .team-flage:nth-child(2n) {
+            margin-right: 15px;
+        }
+        .subscribe {
+            width: 45%;
+        }
+    }
